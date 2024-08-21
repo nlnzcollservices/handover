@@ -5,52 +5,55 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Multi-Project Handover Document</title>
-    <style>
-        body {
-            font-family: 'Times New Roman', Times, serif;
-            margin: 0;
-            padding: 20px;
-            background-color: #f0f8ff; /* light bluish background */
-        }
-        header {
-            background-color: #005f99; /* dark bluish header */
-            color: white;
-            padding: 20px;
-            text-align: center;
-        }
-        h1 {
-            margin: 0;
-        }
-        section {
-            background-color: white;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        h2 {
-            color: #005f99; /* dark bluish headings */
-        }
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 20px;
-        }
-        table, th, td {
-            border: 1px solid #ddd;
-        }
-        th, td {
-            padding: 8px;
-            text-align: left;
-        }
-        th {
-            background-color: #e6f2ff; /* light blue for table headers */
-        }
-        ul {
-            list-style-type: square;
-            margin-left: 20px;
-        }
-    </style>
+   <style>
+    body {
+        font-family: 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 20px;
+        background-color: #f0f8ff; /* light bluish background */
+    }
+    header {
+        background-color: #005f99; /* dark bluish header */
+        color: white;
+        padding: 20px;
+        text-align: center;
+    }
+    h1 {
+        margin: 0;
+    }
+    section {
+        background-color: white;
+        padding: 20px;
+        margin: 20px 0;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    h2 {
+        color: #005f99; /* dark bluish headings */
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+    table, th, td {
+        border: 1px solid #ddd;
+    }
+    th, td {
+        padding: 8px;
+        text-align: left;
+    }
+    th {
+        background-color: #e6f2ff; /* light blue for table headers */
+    }
+    
+    /* Pink background only for specific rows */
+    .pink-background {
+        background-color: #ffe6e6; /* light pink background for rows */
+    }
+
+
+</style>
 </head>
 <body>
 
@@ -201,7 +204,7 @@
                 </ul>
             </td>
             <td>Tool to collect images for TURF platform. Collecting only.</td>
-        <tr>
+        <tr class="pink-background">
             <td><a href="https://github.com/nlnzcollservices/yumpu-tool">Yumpu Tool</a></td>
             <td>One off</td>
             <td>Maintenance</td>
@@ -211,7 +214,7 @@
         </tr>
 
         </tr>
-             <tr>
+             <tr class="pink-background">
             <td><a href="https://github.com/nlnzcollservices/Tiktok_collecting_tool">Collecting tool for Royal Commission</a></td>
             <td>One off</td>
             <td>Maintenance</td>
@@ -228,7 +231,7 @@
             <td>Contributor</td>
             <td>To update if required</td>
         </tr>
-        <tr>
+        <tr class="pink-background">
             <td><a href="https://github.com/nlnzcollservices/youtube-collector">Alma Calendar</a></td>
             <td>One off</td>
             <td>Development</td>
@@ -236,7 +239,7 @@
             <td>Use existing Google credentials</td>
             <td>Still drafts and ideas based on harvester manager and podcasts. The records part has not been created yet; could be developed this or any other way.</td>
         </tr>
-        <tr>
+        <tr class="pink-background">
             <td><a href="https://github.com/nlnzcollservices/youtube-collector">Youtube</a></td>
             <td>Should be Regular and One off</td>
             <td>Development</td>
