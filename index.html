@@ -72,7 +72,16 @@
     border-radius: 10px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
     font-family: 'Arial', sans-serif;
-}
+    }
+    .map-background {
+    background-image: url('https://www.transparenttextures.com/patterns/vintage-map.png'); /* Replace with a suitable map pattern */
+    background-color: #faf0e6; /* Linen color */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
+    font-family: 'Times New Roman', serif;
+    }
+   
 
 
 
@@ -247,10 +256,10 @@
         </tr>
 
         <tr>
-            <td><a href="https://github.com/NLNZDigitalPreservation/rosetta_sip_factory">Rosetta Sip Factory</a>and <a href="https://github.com/NLNZDigitalPreservation/mets_dnx">Mets DNX</a></td>
+            <td><a href="https://github.com/NLNZDigitalPreservation/rosetta_sip_factory">Rosetta Sip Factory</a></br> and <a href="https://github.com/NLNZDigitalPreservation/mets_dnx">Mets DNX</a></td>
             <td>Rosetta_sip_factory library depending on Mets_DNX library</td>
-            <td>GitHub username</td>
-            <td>/td>
+            <td>Used in most projects</td>
+            <td>Maintenance</td>
             <td>Contributor</td>
             <td>To update if required</td>
         </tr>
@@ -357,7 +366,7 @@
         <p>The Issuu project collects PDFs and images from the Issuu platform. Two workflows are used for this project, both relying on web scraping tools like Selenium and Geckodriver.</p>
     </article>
 
-    <article>
+    <article class="map-background">
         <h3>LINZ</h3>
         <p>The LINZ project deals with ingesting LINZ documents. It relies on Tesseract and GDAL for document processing. Regular data reorganization is needed before running the scripts.</p>
     </article>
