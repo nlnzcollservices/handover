@@ -250,14 +250,14 @@
 
 
     </table>
-</section>
-<section>
-    <h2>3. Project Notes</h2>
-    
-    <article>
-        <h3>Overall</h3>
-        
+        </section>
         <section>
+            <h2>3. Project Notes</h2>
+            
+            <article>
+                <h3>Overall</h3>
+                
+                <section>
             <h4>Best Practices</h4>
             <p>Current best practices for project management and script organization involve the following guidelines:</p>
         
@@ -283,10 +283,27 @@
                 </li>
         
                 <li><strong>Project Folders and Scripts</strong>:
-                    <p>Each project folder often contains more scripts than strictly required. This includes scripts for testing, experimentation, and cleaning. However, the clean and final version of the scripts can be found in the <strong>Project_name_git</strong> folders. These folders are inside of working project folder and they passively synced with GitHub repositories and serve as the main point of communication with Git. All projects use Git for version control.</p>
+                    <p>Each project folder often contains more scripts than strictly required. This includes scripts for testing, experimentation, and cleaning. However, the clean and final version of the scripts can be found in the <strong>Project_name_git</strong> folders. These folders are inside the working project folder and are passively synced with GitHub repositories, serving as the main point of communication with Git. All projects use Git for version control.</p>
+                </li>
+        
+                <li><strong>Script Naming and Documentation</strong>:
+                    <ul>
+                        <li>All scripts should have meaningful names that clearly reflect their purpose.</li>
+                        <li>Each script must include comments and <strong>docstrings</strong> to explain its functionality, inputs, and outputs, making the code easier to understand and maintain.</li>
+                        <li>Scripts should adhere to <strong>PEP8 formatting standards</strong> to ensure code consistency and readability.</li>
+                    </ul>
+                </li>
+        
+                <li><strong>Testing</strong>:
+                    <ul>
+                        <li>All projects should contain tests, including both <strong>functional</strong> tests (to verify the specific functionalities of the project) and <strong>external</strong> tests (to validate integration and broader use cases).</li>
+                        <li>The convention for writing tests is to use <strong>pytest</strong>, though this is flexible and other testing frameworks can be considered.</li>
+                        <li>For convenience, external tests can be generated using tools such as <strong>GitHub Copilot</strong> or <strong>OpenAI</strong>. However, these generated tests should always be reviewed, modified if necessary, and verified to ensure they adequately cover the project’s requirements and are functioning properly.</li>
+                    </ul>
                 </li>
             </ul>
         </section>
+
          <section>
         <h4>Project Structure</h4>
         <p>There are established over time rules for project structure, although not all repositories, especially older ones, fully meet these standards. However, the ideal structure is set for convenience and should include the following folders:</p>
