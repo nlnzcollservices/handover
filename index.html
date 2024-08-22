@@ -274,16 +274,20 @@
         
         </section>
         
-       <section>
+        <section>
             <h4>Best Practices</h4>
             <p>Current best practices for project management and script organization involve the following guidelines:</p>
         
             <ul>
+                <li><strong>Main Script Storage: GitHub</strong>: 
+                    <p>The primary storage location for all final and version-controlled scripts is <strong>GitHub</strong>. Each project should have a corresponding repository on GitHub where the clean and final versions of the scripts are maintained. This ensures easy collaboration, version control, and code sharing.</p>
+                </li>
+        
                 <li><strong>Script Storage Locations</strong>: 
                     <ul>
-                        <li>Scripts are primarily kept on two servers:
+                        <li>Scripts are also kept on two additional servers:
                             <ul>
-                                <li><strong>Cascade (Y)</strong>: A shared server where most of the scripts are currently stored.</li>
+                                <li><strong>Cascade (Y)</strong>: A shared server where most of the scripts are currently stored for local execution and quick access.</li>
                                 <li><strong>G server</strong>: Another shared server that holds additional project scripts and data.</li>
                             </ul>
                         </li>
@@ -296,16 +300,14 @@
                 </li>
         
                 <li><strong>Project Folders and Scripts</strong>:
-                    <p>Each project folder often contains more scripts than strictly required. This includes scripts for testing, experimentation, and cleaning. However, the clean and final version of the scripts can be found in the <strong>Project_name_git</strong> folders. These folders serve as the main point of communication with the Git repositories, even though they are not perfectly aligned with best practices.</p>
+                    <p>Each project folder often contains more scripts than strictly required. This includes scripts for testing, experimentation, and cleaning. However, the clean and final version of the scripts can be found in the <strong>Project_name_git</strong> folders. These folders are synced with GitHub repositories and serve as the main point of communication with Git, although they are not perfectly aligned with best practices.</p>
                 </li>
         
                 <li><strong>Git Integration</strong>: 
                     <p>All projects use Git for version control, and all communication with Git repositories is set from the <strong>Project_name_git</strong> folders. Each project should ideally include only essential scripts and follow a structured commit history to ensure smooth collaboration and version management.</p>
                 </li>
             </ul>
-        </section>
-
-        
+        </section>        
         <section>
             <h4>Tests and CI</h4>
             <p>Each project must have unit tests covering critical functionality. Continuous Integration (CI) should be used to automate testing on every push to the repository.</p>
