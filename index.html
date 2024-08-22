@@ -273,15 +273,37 @@
         
         </section>
         
-        <section>
+       <section>
             <h4>Best Practices</h4>
+            <p>Current best practices for project management and script organization involve the following guidelines:</p>
+        
             <ul>
-                <li>Maintain clean and modular code with clear documentation.</li>
-                <li>Follow PEP 8 for Python projects.</li>
-                <li>Use meaningful commit messages when pushing to Git.</li>
-                <li>Maintain consistency in naming conventions across all projects.</li>
+                <li><strong>Script Storage Locations</strong>: 
+                    <ul>
+                        <li>Scripts are primarily kept on two servers:
+                            <ul>
+                                <li><strong>Cascade (Y)</strong>: A shared server where most of the scripts are currently stored.</li>
+                                <li><strong>G server</strong>: Another shared server that holds additional project scripts and data.</li>
+                            </ul>
+                        </li>
+                        <li>There is no dedicated server for running scripts. For full automation, container servers could be leveraged in the future to ensure proper isolation and scalability.</li>
+                    </ul>
+                </li>
+        
+                <li><strong>Use of Cascade Server (LD_working)</strong>: 
+                    <p>Currently, all the projects are set on the <strong>Cascade server</strong> under the <strong>LD_working</strong> section. While this section provides cost-effective storage with a 30-day retention period, it is not ideal for long-term script storage or projects requiring a full history.</p>
+                </li>
+        
+                <li><strong>Project Folders and Scripts</strong>:
+                    <p>Each project folder often contains more scripts than strictly required. This includes scripts for testing, experimentation, and cleaning. However, the clean and final version of the scripts can be found in the <strong>Project_name_git</strong> folders. These folders serve as the main point of communication with the Git repositories, even though they are not perfectly aligned with best practices.</p>
+                </li>
+        
+                <li><strong>Git Integration</strong>: 
+                    <p>All projects use Git for version control, and all communication with Git repositories is set from the <strong>Project_name_git</strong> folders. Each project should ideally include only essential scripts and follow a structured commit history to ensure smooth collaboration and version management.</p>
+                </li>
             </ul>
         </section>
+
         
         <section>
             <h4>Tests and CI</h4>
