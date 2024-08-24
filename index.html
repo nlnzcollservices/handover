@@ -358,7 +358,20 @@
 
     <article class="audio-background">
         <h3>Podcasts</h3>
-        <p>The Podcasts project involves automating the ingestion and processing of podcast files. Ensure proper integration with Google Sheets and Google API for metadata handling.</p>
+        <p>The Podcasts project involves automated scraping, ingestion of podcast audio files to Rosetta and building bibliographical records in Alma.</p>
+        <p>This is the biggest and the most developed pipeline. The  key to success is  as well-structured input information, as podcast feeds. All the essential codes and cleaned versions on the <a href=https://github.com/nlnzcollservices/podcast-collector/upload/master/scripts>git</a></p>.
+        <p> On the current stage cataloguing team is working on new templates in the new RDA format, that is why the records for the podcast titles with "_SR_" in the template name are not currently completed with 942 fields. After they finish te process, rename tamplates in podcast_dict.py and then to db via database_handler.py script and functions "db_update_template_from_dcitionary.py.
+        Implementing RDA might require changes in "podcasts1_create_records.py".
+        (The same way could be updated "automated_flag" and rss feed. See example to call the functions in the botton of database_handler.py script)</p>
+        <p>The pipeline could be run from "podcasts.py" or "podcats_GUI.py". I recommend the GUI version, as oter one would require comment and uncomment instead if tick. 
+        GUI version is freezing and print info after all functions finish they work. The best time to run it Thursday evening or Sunday evening, or both.</p>
+        <p>The script is using a podcast google sheet (see secrets_handover info) with a free account, that is why the number of calls is limited. Do not worry if the script/app breaks with google auth and ssl errors. Just run after a while or the next day.</p>
+        <p>I also recommend to sort the main spreadsheet by "ticks" to have the on the top. Then select and run "update episodes from spreadsheet" function only. You will see that "ticked" line are disappeaing from ths spreadsheet.
+        Break the script when it copy to db and remove all the "ticked" lines it will save the number of calls per time.</p>
+        <p>It is said in GUI but I would like to repeat, that another weak point is SIP structure. Due to complicated structure (serial mms ---> mis mms) it is easy  to break the system, if run "podcasts2_make_sips.py" between you submitted sips and did not get
+        IEs and confirmation from Rosetta API, that the SIPs have status "Finished". That is why "Make SIPs" function  should be stictly run between Thursday and Monday including those days. (outside Rosetta scheduled jobs).
+                           
+        </p>
     </article>
 
     <article>
