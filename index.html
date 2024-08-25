@@ -90,7 +90,7 @@
 <body>
 
 <header>
-    <h1>Handover Document</h1>
+    <h1> Document</h1>
 </header>
 
 <section>
@@ -104,7 +104,7 @@
 
 <section>
     <h2>2. List of Projects</h2>
-    <p>Below is the list of projects covered in this handover:</p>
+    <p>Below is the list of projects covered in this :</p>
     <table>
         <tr>
             <th>Project Name</th>
@@ -373,11 +373,11 @@
        <h3>Podcasts</h3>
 <p>The Podcasts project involves the automated scraping and ingestion of podcast audio files into Rosetta, as well as the creation of bibliographic records in Alma.</p>
 <p>This is the largest and most developed pipeline. The key to its success is having well-structured input information, such as podcast feeds. All essential code and cleaned versions are available on the <a href="https://github.com/nlnzcollservices/podcast-collector/upload/master/scripts">GitHub</a>.</p>
-<p>Podcast depends on Google spreadsheet which belong to account collect.podcasts@gmail.com. Credentials are in the secrets_handover document.</p>
+<p>Podcast depends on Google spreadsheet which belong to account collect.podcasts@gmail.com. Credentials are in the secrets_ document.</p>
  <p>At this stage, the cataloguing team is working on new templates in the RDA format. As a result, podcast titles with "_SR_" in the template name are not yet complete with 942 fields. Once the process is finished, rename the templates in `podcast_dict.py`, then update the database via `podcasts_database_handler.py` using the "db_update_template_from_dictionary.py" function. Implementing RDA may also require changes to "podcasts1_create_records.py". 
 (The same update process can be applied to the "automated_flag" and the RSS feed. Examples for calling these functions are provided at the bottom of the `podcasts_database_handler.py` script.)</p>
 <p>The pipeline can be run using either "podcasts.py" or "podcasts_GUI.py". I recommend the GUI version, as it uses checkboxes instead of requiring comments/uncomments. The GUI may freeze and print information only after all functions have finished their tasks. The best time to run it is Thursday evening, Sunday evening, or both.</p>
-<p>The script uses a podcast Google Sheet (see <a href="https://dia.cohesion.net.nz/my/personal/pendhaasiap/_layouts/15/WopiFrame.aspx?sourcedoc=%7BCF5A584C-A65F-481B-8981-63FF1695DA74%7D&file=Document.docx&action=default">secrets_handover</a> info) with a free account, so the number of calls is limited. If the script or app fails with Google authentication or SSL errors, simply try again after some time or the next day.</p>
+<p>The script uses a podcast Google Sheet (see <a href="https://dia.cohesion.net.nz/my/personal/pendhaasiap/_layouts/15/WopiFrame.aspx?sourcedoc=%7BCF5A584C-A65F-481B-8981-63FF1695DA74%7D&file=Document.docx&action=default">secrets_</a> info) with a free account, so the number of calls is limited. If the script or app fails with Google authentication or SSL errors, simply try again after some time or the next day.</p>
 <p>I recommend sorting the main spreadsheet by "ticks" to prioritize them. Then, select and run the "update episodes from spreadsheet" function only. You’ll notice that the "ticked" rows will disappear from the spreadsheet. Stop the script after it copies to the database and removes all "ticked" rows to save on the number of calls.</p>
 <p>While it’s mentioned in the GUI, I want to reiterate that the SIP structure is another weak point. Due to its complexity (serial MMS -> MMS), the system can easily be disrupted if "podcasts2_make_sips.py" is run before receiving confirmation from Rosetta’s API that the SIPs have the "Finished" status. Therefore, the "Make SIPs" function should only be run between Thursday and Monday (outside of Rosetta's scheduled jobs).</p>
     </article>
@@ -479,14 +479,14 @@
          <tr>
             <td>collect.podcasts@gmail.com</td>
             <td>Podcast project</td>
-            <td>See passwords in a href="https://dia.cohesion.net.nz/my/personal/pendhaasiap/_layouts/15/WopiFrame.aspx?sourcedoc=%7BCF5A584C-A65F-481B-8981-63FF1695DA74%7D&file=Document.docx&action=default">secrets_handover</a></td>
+            <td>See passwords in <a href="https://dia.cohesion.net.nz/my/personal/pendhaasiap/_layouts/15/WopiFrame.aspx?sourcedoc=%7BCF5A584C-A65F-481B-8981-63FF1695DA74%7D&file=Document.docx&action=default">secrets_handover</a></td>
             <td>Owner</td>
             <td>Important account</td>
         </tr>
         <tr>
             <td>nlnzsocialmediaharvesters@gmail.com</td>
              <td>Social Media and Youtube</td>
-            <td>See passwords in a href="https://dia.cohesion.net.nz/my/personal/pendhaasiap/_layouts/15/WopiFrame.aspx?sourcedoc=%7BCF5A584C-A65F-481B-8981-63FF1695DA74%7D&file=Document.docx&action=default">secrets_handover</a></td>
+            <td>See passwords in <a href="https://dia.cohesion.net.nz/my/personal/pendhaasiap/_layouts/15/WopiFrame.aspx?sourcedoc=%7BCF5A584C-A65F-481B-8981-63FF1695DA74%7D&file=Document.docx&action=default">secrets_handover</a></td>
             <td>Owner</td>
             <td>Important account</td>
         </tr>
